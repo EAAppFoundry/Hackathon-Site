@@ -1,29 +1,30 @@
 !!! 5
 html(lang="em")
-	head
-		title= title
-		link(rel="stylesheet", href="stylesheets/base.css", type="text/css")
-		link(rel="stylesheet", href="stylesheets/layout.css", type="text/css")
-		link(rel="stylesheet", href="stylesheets/skeleton.css", type="text/css")
-		link(rel="stylesheet", href="stylesheets/site.css", type="text/css")
-		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
-		script(src="javascripts/tabs.js")
-	body
-		div.container
-			div.offset-by-nine
-				div.awesomeText Hackathon!
-			
-			ul.tabs
-				li
-					a.active(href="/") Home
-				li
-					a(href="/loggly") Loggly
-				li
-					a(href="/apollo") Apollo
-				li
-					a(href="/infinity") Infinity
+    head
+        | <link href="stylesheets/base.css" media="screen" rel="stylesheet" type="text/css"/>
+        | <link href="stylesheets/layout.css" media="screen" rel="stylesheet" type="text/css"/>
+        | <link href="stylesheets/skeleton.css" media="screen" rel="stylesheet" type="text/css"/>
+        | <link href="stylesheets/site.css" rel="stylesheet" type="text/css">
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
+        script(src="javascripts/tabs.js")
+        title= title
+    body
+        div.container
+            div.offset-by-nine
+                div.awesomeText Hackathon
 
-			div!= body
+            ul.tabs
+                li
+                    a.active(href="/") Home
+                li
+                    a(href="/loggly") Loggly
+                li
+                    a(href="/apollo") Apollo
+                li
+                    a(href="/infinity") Infinity
+            
+            div.whiteContainer
+                div!= body
 
 
 

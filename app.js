@@ -61,10 +61,10 @@ app.get('/infinity', function(req, res){
 
 app.get('/', function(req, res){
 	logger.log('info', 'localhost', 'Rendering index.jade');
-	
+
 	res.render('index.jade',{layout: true,
 		locals: {
-			title: 'Hackathon!'
+			title: 'Hackathon'
 		}}
 	);
 });
