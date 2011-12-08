@@ -1,0 +1,21 @@
+body {
+	background: cbf6c9;
+}
+
+.container .awesomeText{
+	font-size: 18px;
+	padding: 5px 50px;
+	text-align: right;
+}
+.container .menuText {
+	font-size: 16px;
+}
+.container h2 {
+	font-size: 24px;
+}
+
+.container .menuSurround {
+	height: 24px;
+	width: 960px;
+	background-color: 3ddc39;
+}
