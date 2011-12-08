@@ -1,5 +1,5 @@
 body {
-	background-image:url('../images/graphy.png');
+	background-image:url('../images/roughcloth.png');
 }
 
 .container .awesomeText{
@@ -24,6 +24,8 @@ body {
 	background-color:white;
 	position:absolute;
 	top:69px;
-	width: 900px;
+	width: 960px;
 	height: 800px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
