@@ -1,10 +1,13 @@
 body {
-	background-image:url('../images/roughcloth.png');
+	background-image:url('../images/white_carbon.png');
 }
 
+.container .buffer {
+    margin-top: 25px;
+}
 .container .awesomeText{
 	font-size: 38px;
-	padding: 8px 50px;
+	padding: 18px 40px;
 	text-align: right;
 }
 .container .menuText {
@@ -23,9 +26,27 @@ body {
 .container .whiteContainer {
 	background-color:white;
 	position:absolute;
-	top:69px;
+	top:87px;
 	width: 960px;
 	height: 800px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+}
+
+.container .leftHeadline{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .rightText {
+    font-size: 14px;
+}
+
+.container .br .spacer {
+    margin-top: 100px;
+}
+
+.container .strongDetail {
+    font-size: 15; 
+    font-weight:bold
 }

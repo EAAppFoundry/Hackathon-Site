@@ -1,0 +1,53 @@
+
+.deck-container .focused-text {
+	margin-top: 140px;
+	font-size: 45px;
+}
+
+.deck-container .emph {
+	font-size: 50px;
+}
+
+.deck-container .center-list {
+	list-style-type: none;
+	margin-top: 80px;
+	text-align: center;
+}
+
+.deck-container .left-list {
+	list-style-type: none;
+	margin-top: 80px;
+	width: 200px;
+	text-align: left;	
+}
+
+.deck-container .right-list {
+	list-style-type: none;
+	margin-top: -190px;
+	margin-left:400px;
+	width:200px;
+	text-align: right;
+}
+
+.deck-container .strike {
+	text-decoration: line-through;
+}
+
+.deck-container h4 {
+	margin-top: -30px;
+}
+
+.deck-container .offroad{
+	text-align: center;
+	font-size: 33px;
+}
+
+.deck-container .smtext {
+	font-size: 24px;
+}
+
+.deck-container .hacklink {
+	font-size: 14px;
+	float:right;
+	text-align: right;
+}

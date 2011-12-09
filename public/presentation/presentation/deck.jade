@@ -1,0 +1,69 @@
+!!! 5
+html.no-js(lang='en')
+    head
+        title Hackathon!
+
+        meta(name='viewport', content='width=1024, user-scalable=no')
+
+        link(rel='stylesheet', href='../core/deck.core.css')
+        link(rel='stylesheet', href='../extensions/goto/deck.goto.css')
+        link(rel='stylesheet', href='../extensions/menu/deck.menu.css')
+        link(rel='stylesheet', href='../extensions/navigation/deck.navigation.css')
+        link(rel='stylesheet', href='../extensions/status/deck.status.css')
+        link(rel='stylesheet', href='../extensions/hash/deck.hash.css')
+
+        link(rel='stylesheet', id='style-theme-link', href='../themes/style/swiss.css')
+        link(rel='stylesheet', id='transition-theme-link', href='../themes/transition/horizontal-slide.css')
+        
+        link(rel='stylesheet', href='deck.css')
+
+        script(src='../modernizr.custom.js')
+
+    body.deck-container
+        section.slide#title-slide
+            div.hacklink
+                a(href="http://localhost:3000") Back to Hackathon! site
+            h2 Hackathon!
+
+            
+
+        section.slide#breakdown
+            div.hacklink
+                a(href="http://localhost:3000") Back to Hackathon! site
+            h2 Breakdown
+            ul.center-list
+                li.emph 8 Developers
+                li.emph 5 Days
+                li.emph 3 Projects
+
+        section.slide#team
+            div.hacklink
+                a(href="http://localhost:3000") Back to Hackathon! site
+            h2 Team
+            ul.left-list
+                li.smtext Mickey Yawn
+                li.smtext Mike Smith
+                li.smtext Karlton Berry
+                li.smtext Allen Lyons
+            ul.right-list
+                li.smtext Sri Srinivasan
+                li.smtext Don Browning
+                li.smtext Kevin Brill
+                li.smtext Todd Winfrey        
+        
+
+        a(href='#', class="deck-prev-link", title="Previous")&#8592;
+        a(href='#', class="deck-next-link", title="Next")&#8594;
+
+        
+        
+        script(src='../jquery-1.7.min.js')
+
+        script(src='../core/deck.core.js')
+        script(src='../extensions/hash/deck.hash.js')
+        script(src='../extensions/menu/deck.menu.js')
+        script(src='../extensions/goto/deck.goto.js')
+        script(src='../extensions/status/deck.status.js')
+        script(src='../extensions/navigation/deck.navigation.js')
+
+        script(src='introduction.js')
