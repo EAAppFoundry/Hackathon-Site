@@ -5,8 +5,10 @@ html(lang="em")
         | <link href="stylesheets/layout.css" media="screen" rel="stylesheet" type="text/css"/>
         | <link href="stylesheets/skeleton.css" media="screen" rel="stylesheet" type="text/css"/>
         | <link href="stylesheets/site.css" rel="stylesheet" type="text/css">
+        | <link href="stylesheets/isotope.css" rel="stylesheet" type="text/css">
         script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
         script(src="javascripts/tabs.js")
+        script(src="javascripts/jquery.isotope.js")
         title= title
     body
         div.container
@@ -27,5 +29,12 @@ html(lang="em")
                 div.buffer
                     div!= body
 
-
+        script
+             $(function(){
+               var $container = $('#container');
+      
+               $container.isotope({
+                   itemSelector: '.element'
+               });
+             });
 
