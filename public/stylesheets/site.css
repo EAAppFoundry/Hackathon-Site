@@ -50,3 +50,9 @@ body {
     font-size: 15; 
     font-weight:bold
 }
+
+#filters li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}

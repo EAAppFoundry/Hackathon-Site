@@ -36,5 +36,16 @@ html(lang="em")
                $container.isotope({
                    itemSelector: '.element'
                });
+
+               $filterLinks = $('#filters').find('a');
+
+               $filterLinks.click(function(){
+                  var $this = $(this);
+                  var selected = $(this).attr('data-filter');
+                  
+                  $container.isotope({filter: selected});
+                  return false;
+                   
+               });
              });
 

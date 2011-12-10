@@ -51,37 +51,43 @@ div.row
             div.leftHeadline The Team
         div(class="thirteen columns omega")
             div.strongDetail The Hackathon Team
-            
+            | <ul id="filters" class="option-set">
+            |   <li><a href="#" data-filter="*">show all</a></li>
+            |   <li><a href="#" data-filter=".infinity" style="margin-top: -45px">Infinity</a></li>
+            |   <li><a href="#" data-filter=".loggly">Loggly</a></li>
+            |   <li><a href="#" data-filter=".apollo">Apollo</a></li>
+            |</ul>
+
             div(id="container")
-                div(class="element alkali")
+                div(class="element alkali loggly")
                     h3.symbol Db
                     h2.name Don Browning
                     p.weight Loggly
-                div(class="element alkaline-earth")
+                div(class="element alkaline-earth infinity")
                     h3.symbol Ms
                     h2.name Mike Smith
                     p.weight Infinity
-                div(class="element other nonmetal")
+                div(class="element other nonmetal apollo")
                     h3.symbol Ss
                     h2.name Sri Srinivassan
                     p.weight Apollo
-                div(class="element metalloid")
+                div(class="element metalloid loggly")
                     h3.symbol My
                     h2.name Mickey Yawn
                     p.weight Loggly
-                div(class="element post-transition")
+                div(class="element post-transition infinity")
                     h3.symbol Kb
                     h2.name Karlton Berry
                     p.weight Infinity
-                div(class="element transition")
+                div(class="element transition apollo")
                     h3.symbol Al
                     h2.name Allen Lyons
                     p.weight Apollo
-                div(class="element actinoid")
+                div(class="element actinoid infinity")
                     h3.symbol Tw
                     h2.name Todd Winfrey
                     p.weight Infinity
-                div(class="element lanthanoid")
+                div(class="element lanthanoid infinity")
                     h3.symbol Kb
                     h2.name Kevin Brill
                     p.weight Infinity
