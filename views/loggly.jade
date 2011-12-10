@@ -14,3 +14,57 @@ div.row
                 p
                     | As part of this effort we <a href="http://ealoggly.nodejitsu.com">created a website</a> for 
                     | viewing logfiles, as well as logging appenders for node.js and .Net
+div.row
+    div(class="sixteen columns clearfix")
+        div(class="three columns alpha")
+            div.leftHeadline Let's go!
+        div(class="thirteen columns omega")
+            div.strongDetail Spare me the details, just get me started.
+            div.description
+                p
+                    |Gotcha. You're ready to get going.  In that case:
+                    ol
+                        li Go to eaturner.loggly.com and log in with eaturner/!hello!1
+                        li Create a new input for your application
+                        li Make note of your input key.
+                p
+                    |If you are logging from a .Net app, grab these assemblies and drop them in
+                    |your lib folder:
+                    |<a href="https://github.com/downloads/EAAppFoundry/loggly-csharp/Loggly.zip")>log-client.zip</a>
+                    |Instructions for how to use the log-client can be found 
+                    | <a href="https://github.com/EAAppFoundry/loggly-csharp">here</a>.
+                p
+                    |if you are logging from a node.js app, grab the ealogger.js client follow the instructions
+                    |<a href="https://github.com/EAAppFoundry/EALoggly-Node">here</a>.
+                p
+                    |To view your log data, <a href="http://ealoggly.nodejitsu.com">crank up the log viewer</a>
+                    | and select your input on the left.
+div.row
+    div(class="sixteen columns clearfix")
+        div(class="three columns alpha")
+            div.leftHeadline Show me the code.
+        div(class="thirteen columns omega")
+            div.strongDetail C# Log Client
+            div.description
+                p
+                    | <a href="https://github.com/EAAppFoundry/loggly-csharp">Github Repo</a> - Forked <a href="https://github.com/karlseguin">Karl Seguin's</a> C# .Net driver
+                    | and added a Log/LogAsync method that provide the structure we're used to for 
+                    | log messages (level, machine, log message)
+            div.strongDetail Node.js Log Client
+            div.description
+                p
+                    |<a href="https://github.com/EAAppFoundry/EALoggly-Node">Github Repo</a> - 
+                    |We built a wrapper on top of nodejitsu's Loggly driver.  Similar to the C# driver, it
+                    |makes it easer to log with the (level, machine, log message) structure.
+            div.strongDetail Log Viewer Website
+            div.description
+                p
+                    | <a href="https://bitbucket.org/EATurner/loggly/src">Bitbucket Repo</a> - Once you spend 
+                    | a few minutes with the loggly.com website you quickly learn the experience
+                    | basically...  sucks.  Rather than wade through that, we created a much easier site
+                    | that gives you a view of your log data.  Plus it was built to leverage the (level, machine, and
+                    | log message) data provided by our C# and node.js log clients.
+
+
+
+
