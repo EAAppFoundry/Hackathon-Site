@@ -45,10 +45,12 @@
 }
 
 #container {
-  border: 1px solid #666;
+  border: 0px solid #666;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
   padding: 5px;
   margin-bottom: 20px;
-  background-color: #1F1E1D;
+  background-color: white;
   width: 600px;
 }
 

@@ -51,12 +51,11 @@ div.row
             div.leftHeadline The Team
         div(class="thirteen columns omega")
             div.strongDetail The Hackathon Team
-            | <ul id="filters" class="option-set">
-            |   <li><a href="#" data-filter="*">show all</a></li>
-            |   <li><a href="#" data-filter=".infinity" style="margin-top: -45px">Infinity</a></li>
-            |   <li><a href="#" data-filter=".loggly">Loggly</a></li>
-            |   <li><a href="#" data-filter=".apollo">Apollo</a></li>
-            |</ul>
+                ul(class="filters", id="all")
+                    li(class="teamName", id=".loggly") Loggly
+                    li(class="teamName", id=".apollo") Apollo
+                    li(class="teamName", id=".infinity") Infinity
+            
 
             div(id="container")
                 div(class="element alkali loggly")
@@ -114,7 +113,7 @@ script
 
 script
     $(document).ready(function(){
-        var teams = ['*', '.loggly', '.apollo', '.infinity'];
+        var teams = ['.loggly', '.apollo', '.infinity', '*'];
         var $count = 0;
 
         setInterval(function(){
@@ -124,7 +123,17 @@ script
                itemSelector: '.element'
             });
 
-            $filterLinks = $('#filters').find('a');
+            var l = $('#loggly').css('font-weight', 'bold');
+            var tns = $('#all').find('li');
+            
+            tns.each(function(i){
+               if(this.id === teams[$count]) {
+                   this.style.cssText = 'font-weight: bold;'
+               } 
+               else {
+                   this.style.cssText = 'font-weight: normal;'
+               }
+            });
             
             $container.isotope({filter: teams[$count]});
 

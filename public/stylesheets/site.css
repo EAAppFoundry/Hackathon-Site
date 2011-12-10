@@ -51,8 +51,12 @@ body {
     font-weight:bold
 }
 
-#filters li {
+.container .filters li {
     display: inline;
     list-style-type: none;
     padding-right: 20px;
+}
+
+.container .teamName {
+    font-weight: normal;
 }
