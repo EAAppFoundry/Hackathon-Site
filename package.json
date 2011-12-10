@@ -2,7 +2,7 @@
   "author": "Don Browning <don.browning@turner.com>",
   "name": "hackathon",
   "description": "main web site for the hackathon",
-  "version": "0.0.1-3",
+  "version": "0.0.1-10",
   "repository": {
     "type": "git",
     "url": "git://github.com/EAAppFoundry/Hackathon-Site.git"

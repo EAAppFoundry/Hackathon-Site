@@ -92,6 +92,48 @@ div.row
                     h2.name Kevin Brill
                     p.weight Infinity
 
+script
+     $(function(){
+       var $container = $('#container');
+
+       $container.isotope({
+           itemSelector: '.element'
+       });
+
+       $filterLinks = $('#filters').find('a');
+
+       $filterLinks.click(function(){
+          var $this = $(this);
+          var selected = $(this).attr('data-filter');
+          
+          $container.isotope({filter: selected});
+          return false;
+           
+       });
+     });
+
+script
+    $(document).ready(function(){
+        var teams = ['*', '.loggly', '.apollo', '.infinity'];
+        var $count = 0;
+
+        setInterval(function(){
+            var $container = $('#container');
+
+            $container.isotope({
+               itemSelector: '.element'
+            });
+
+            $filterLinks = $('#filters').find('a');
+            
+            $container.isotope({filter: teams[$count]});
+
+            if ($count === 3)
+                $count = 0;
+            else
+                $count++;  
+        }, 2000);
+    });
 
 
 
