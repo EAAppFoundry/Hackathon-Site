@@ -6,11 +6,12 @@ div.row
             div.strongDetail Infinity
             div.description 
                 p
-                    | Infinity was basically an experiment to create a nice viewable schedule of all the Turner and competitive networks using a new set of technologies. These technologies included MongoDB, Node.js, jQuery, and Knockout.js.</br>
-                    | Lets take a look at the pieces:
+                    | Infinity attempts to create an appealing schedule of all Turner and competitive networks using a new set of technologies.  These technologies include MongoDB, Node.js, jQuery, and Knockout.js.</br>
+                    | Let's take a look at the pieces:
                     ol
-                        li Schedule Harvester - This piece of .Net code retrieves the linear and digital schedules from Scarlett for the last 30 days and populates a MongoDB collection with the results.  The Harvester also populates another collection with the list of all current Networks.
-                        li Schedule Node Site - This site is served by Node.js.  We used two main Node.js modules.  The Express module was used to create the routing for the REST API and the general routing of the application while Mongoose was used for connecting to MongoDB.  We decided to build the web pages using Html, jQuery and Knockout.js. We also leveraged the <a href="http://dhtmlx.com/docs/products/dhtmlxScheduler/index.shtml">dhtmlxscheduler</a> ajax scheduler to display the data. 
+                        li Schedule Harvester - This .Net module populates a MongoDB collection with the linear and digital schedules from Scarlett for the last 30 days.  Alongside the schedule, the Harvester also captures a collection of current Networks.
+                        li Schedule Node Server - As a backend host, Infinity uses Node.js to serve as an interface to the data repository.  By utilizing node's Express framework, Inifinity hosts a REST API that routes url friendly requests to its respective data.  With help from Mongoose, server requests convert to database requests for MongoDB to execute.
+                        li Schedule Site - Infinity exposes its data using Html, jQuery and Knockout.js, while leveraging the <a href="http://dhtmlx.com/docs/products/dhtmlxScheduler/index.shtml">dhtmlxscheduler</a> ajax scheduler and the jqgrid. These latter controls demonstrate the flexibility of Infinity's architecture, allowing the reuse of its data without the rework of its structure.  
 div.row
     div(class="sixteen columns clearfix")
         div(class="three columns alpha")
