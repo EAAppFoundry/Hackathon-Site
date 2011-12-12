@@ -1,4 +1,40 @@
-div(class="sixteen columns")
-	h2 Home
-
-	p Hello there!
+div.row
+    div(class="sixteen columns clearfix")
+        div(class="three columns alpha")
+            div.leftHeadline What is it?
+        div(class="thirteen columns omega")
+            div.strongDetail Infinity
+            div.description 
+                p
+                    | Infinity was basically an experiment to create a nice viewable schedule of all the Turner and competitive networks using a new set of technologies. These technologies included MongoDB, Node.js, jQuery, and Knockout.js.</br>
+                    | Lets take a look at the pieces:
+                    ol
+                        li Schedule Harvester - This piece of .Net code retrieves the linear and digital schedules from Scarlett for the last 30 days and populates a MongoDB collection with the results.  The Harvester also populates another collection with the list of all current Networks.
+                        li Schedule Node Site - This site is served by Node.js.  We used two main Node.js modules.  The Express module was used to create the routing for the REST API and the general routing of the application while Mongoose was used for connecting to MongoDB.  We decided to build the web pages using Html, jQuery and Knockout.js. We also leveraged the <a href="http://dhtmlx.com/docs/products/dhtmlxScheduler/index.shtml">dhtmlxscheduler</a> ajax scheduler to display the data. 
+div.row
+    div(class="sixteen columns clearfix")
+        div(class="three columns alpha")
+            div.leftHeadline Check it out
+        div(class="thirteen columns omega")
+            div.strongDetail All the schedule goodness without all the fat.
+            div.description
+                p
+                    |You can check out the site here: <a href="http://199.192.240.192:3000">Infinity Web Site</a>
+                    
+div.row
+    div(class="sixteen columns clearfix")
+        div(class="three columns alpha")
+            div.leftHeadline Show me the code.
+        div(class="thirteen columns omega")
+            div.strongDetail 
+            div.description
+                p
+                    |<a href="https://github.com/EAAppFoundry/Infinity">Main Github Repo</a> 
+            div.strongDetail Schedule Harvester
+            div.description
+                P
+                    |<a href="https://github.com/EAAppFoundry/Infinity/tree/master/dotnet">Github code location</a>
+            div.strongDetail Node Site
+            div.description
+                P
+                    |<a href="https://github.com/EAAppFoundry/Infinity/tree/master/node">Github code location</a>
