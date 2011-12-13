@@ -16,7 +16,8 @@
     "express-messages": "latest",
     "jade": "latest",
     "sass": "latest",
-    "loggly": "latest"
+    "loggly": "latest",
+    "timespan": "latest"
   },
   "devDependencies": {},
   "subdomain": "eahackathon",
